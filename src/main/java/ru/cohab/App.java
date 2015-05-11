@@ -12,8 +12,8 @@ public class App
 {
     public static void main(String[] args) throws MalformedURLException, UnknownHostException, IOException
     {
-        HttpClient client = new HttpClient("http://www.habrahabr.ru");
+        HttpClient client = new HttpClient("http://www.habrahabr.ru/");
 
-        System.out.println("Http host: " + client.getStatus());
+        System.out.println("Status code: " + client.getStatus());
     }
 }
